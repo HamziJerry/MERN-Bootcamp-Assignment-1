@@ -101,9 +101,7 @@ const generateMarkup = (data) => {
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   dataArr = [...new FormData(form)];
-  console.log(dataArr);
   const data = Object.fromEntries(dataArr);
-  console.log(data);
 
   let html = generateMarkup(data);
 
