@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Assignment # 01</title>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container form-container">
+      <form method="post" class="form">
+        <div class="form-header">
+          <div class="form-group">
+            <label for="email">Email Address </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password </label>
+            <input type="password" name="password" id="password" required />
+          </div>
+        </div>
+        <div class="form-body">
+          <fieldset class="personal-info">
+            <legend>Personal Profile</legend>
+            <div class="personal-info-left">
+              <div class="form-group">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="cnic">CNIC/B-Form No. </label>
+                <input type="number" name="cnic" id="cnic" required />
+              </div>
+              <div class="form-group">
+                <label for="registrationNo"
+                  >IUB Registration No. <small>(if any)</small></label
+                >
+                <input
+                  type="number"
+                  name="registrationNo"
+                  id="registrationNo"
+                />
+              </div>
+              <div class="form-group">
+                <label for="birthDate">Date Of Birth </label>
+                <input type="date" name="birthDate" id="birthDate" required />
+              </div>
+              <div class="form-group">
+                <label for="religion">Religion </label>
+                <select name="religion" id="religion">
+                  <option>Select...</option>
+                  <option value="islam">Islam</option>
+                  <option value="christianity">Christianity</option>
+                  <option value="hinduism">Hinduism</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="hafiz-e-quran">Hafiz-e-Quran </label>
+                <select name="hafizEQuran" id="hafiz-e-quran">
+                  <option>Select...</option>
+                  value="punjab"
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="address">Postal Address </label>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="15"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="personal-info-right">
+              <div class="form-group">
+                <label for="gender">Gender </label>
+                <label for="male">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    id="male"
+                    checked
+                  />
+                  Male
+                </label>
+                <label for="female">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                  />
+                  Female
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="picture">Picture </label>
+                <input type="file" name="picture" id="picture" />
+              </div>
+              <div class="form-group">
+                <label for="landline">Landline No. </label>
+                <input type="tel" name="landline" id="landline" />
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile No. </label>
+                <input type="tel" name="mobile" id="mobile" required />
+              </div>
+              <div class="form-group">
+                <label for="nationality">Nationality </label>
+                <input
+                  type="text"
+                  name="nationality"
+                  id="nationality"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="domicile">Domicile(Province) </label>
+                <select name="domicile" id="domicile">
+                  <option>Select...</option>
+                  <option value="punjab">Punjab</option>
+                  <option value="islamabad">Islamabad Capital Territory</option>
+                  <option value="sindh">Sindh</option>
+                  <option value="balochistan">Balochistan</option>
+                  <option value="kpk">KPK</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="father-info">
+            <legend>Father Information</legend>
+            <div class="father-info-left">
+              <div class="form-group">
+                <label for="fatherName">Father Name </label>
+                <input type="text" name="fatherName" id="fatherName" required />
+              </div>
+              <div class="form-group">
+                <label for="profession">Profession </label>
+                <input type="text" name="profession" id="profession" required />
+              </div>
+              <div class="form-group">
+                <label for="fatherMobile">Mobile No. </label>
+                <input
+                  type="text"
+                  name="fatherMobile"
+                  id="fatherMobile"
+                  required
+                />
+              </div>
+            </div>
+            <div class="father-info-right">
+              <div class="form-group">
+                <label for="fatherCnic">CNIC/B-Form No. </label>
+                <input
+                  type="number"
+                  name="fatherCnic"
+                  id="fatherCnic"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="income">Monthly Income </label>
+                <input type="number" name="income" id="income" required />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-footer">
+          <div class="btns">
+            <button type="reset" class="btn reset">Reset</button>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+          <div>
+            <p>
+              Scroll down or click <a href="#dataContainer">here</a> to see your
+              data
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="dataContainer" class="container data-container"></div>
+  </body>
+</html>
